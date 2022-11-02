@@ -13,7 +13,7 @@
 
 /*
  * Traces are normally run in a Continuous Integration(CI) environment as locally you can use debugging methods to debug tests.
- * Force tracing using:To run this script: npx playwright test 4-testGenerator.spec.ts --headed --trace on
+ * Force tracing using:To run this script: npx playwright test 5-traceviewer.spec.ts --headed --trace on
  */
 
 /*
