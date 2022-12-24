@@ -2,7 +2,7 @@
     * Locators help us to map web elements to interact with our web application.
     ? More at: https://playwright.dev/docs/locators#quick-guide
 */
-import { test} from "@playwright/test";
+import {test} from "@playwright/test";
 
 test.describe("Locators", () => {
   test.beforeEach(async ({ page }) => {
