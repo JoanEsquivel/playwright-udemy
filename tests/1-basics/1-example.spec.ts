@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from '@playwright/test'
 
 /*
  * * Test: These tests are executed in Playwright environment that launches the browser and provides a fresh page to each test. Check the parameters expected at: https://playwright.dev/docs/api/class-test#test-call
@@ -16,25 +16,25 @@ import { test, expect } from "@playwright/test";
  * * An async function is a function declared with the async keyword, and the await keyword is permitted within it. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
  */
 
-test("homepage has Playwright in title and get started link linking to the intro page", async ({
-  page,
+test('homepage has Playwright in title and get started link linking to the intro page', async ({
+    page,
 }) => {
-  await page.goto("https://playwright.dev/");
+    await page.goto('https://playwright.dev/')
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+    // Expect a title "to contain" a substring.
+    await expect(page).toHaveTitle(/Playwright/)
 
-  // create a locator
-  const getStarted = page.getByText("Get Started");
+    // create a locator
+    const getStarted = page.getByText('Get Started')
 
-  // Expect an attribute "to be strictly equal" to the value.
-  await expect(getStarted).toHaveAttribute("href", "/docs/intro");
+    // Expect an attribute "to be strictly equal" to the value.
+    await expect(getStarted).toHaveAttribute('href', '/docs/intro')
 
-  // Click the get started link.
-  await getStarted.click();
+    // Click the get started link.
+    await getStarted.click()
 
-  // Expects the URL to contain intro.
-  await expect(page).toHaveURL(/.*intro/);
+    // Expects the URL to contain intro.
+    await expect(page).toHaveURL(/.*intro/)
 
-  console.log("Example Log");
-});
+    console.log('Example Log')
+})
