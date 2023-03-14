@@ -4,3 +4,6 @@ coverage
 
 # Ignore all HTML files:
 *.html
+
+# Ignore readme.md
+readme.md

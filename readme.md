@@ -12,6 +12,12 @@ Project to teach Playwright from scratch.
 ## Run ESLint
 
 Open a terminal to the root of your project and run the following command:
-`npx eslint .`
+```npx eslint .```
 
 ## Run prettier
+Open a terminal to the root of your project and run the following command:
+``` npx prettier --write . ```
+
+## For Git Hooks
+1. Install Husky after cloning this project using: ``` npx husky install ```
+2. Then: ``` npx husky add .husky/pre-commit "npx lint-staged" ```
