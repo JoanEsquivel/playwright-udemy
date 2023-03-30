@@ -1,3 +1,4 @@
+//To run this: npx playwright test ./tests/*.ts --ui  
 import { test, expect, type Page } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
