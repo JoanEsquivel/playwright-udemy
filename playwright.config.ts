@@ -40,6 +40,16 @@ const config: PlaywrightTestConfig = {
 
         /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
         trace: 'on-first-retry',
+
+        //!!Just for the tests/promo/api-basics.spec.ts
+        baseURL: 'http://localhost:3000/',
+        // extraHTTPHeaders: {
+        //     Accept: 'application/json',
+        //     // Add authorization token to all requests.
+        //     // Assuming personal access token available in the environment.
+        //     // Authorization: `token ${process.env.API_TOKEN}`,
+        //     Authorization: `Bearer 2d52f2af23f36a3f027b8bb9ef69c5e9f31117c35416235cc0856e70b381292a`,
+        // },
     },
 
     /* Configure projects for major browsers */
